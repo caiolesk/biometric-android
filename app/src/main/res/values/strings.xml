@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">biometric-android</string>
+    <string name="error_msg_no_biometric_hardware">No biometric hardware</string>
+    <string name="error_msg_biometric_hw_unavailable">Biometric hw unavailable</string>
+    <string name="error_msg_biometric_not_setup">Biometric not setup</string>
+    <string name="error_msg_biometric_unavailable">Biometric unavailable</string>
+    <string name="log_in_button">Log in</string>
+    <string name="biometric_setup_title">Biometric login for my app</string>
+    <string name="biometric_setup_subtitle">Log in using your biometric credential</string>
+    <string name="biometric_setup_negative_button">Use account password</string>
+</resources>
