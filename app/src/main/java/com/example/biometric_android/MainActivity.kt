@@ -70,7 +70,14 @@ class MainActivity : AppCompatActivity() {
         // Consider integrating with the keystore to unlock cryptographic operations,
         // if needed by your app.
         binding.signIn.setOnClickListener {
-            biometricPrompt.authenticate(promptInfo)
+            if (::biometricPrompt.isInitialized)
+                biometricPrompt.authenticate(promptInfo)
+            else
+                Toast.makeText(
+                    this,
+                    getString(R.string.biometric_setup_negative_button),
+                    Toast.LENGTH_LONG
+                ).show()
         }
     }
 
